@@ -3,7 +3,7 @@
 
 ## This function creates a special "matrix" object that can cache its inverse.
 
-
+makeCacheMatrix <- function(x = matrix()){
         invrs <- NULL
 ## define the 4 different behaviors or functions for object of type
 ## makeCacheMatrix as follows:
@@ -20,7 +20,7 @@
 ## this line, clears any value of invrs that had been cached by a
 ## prior execution of cacheSolve()
                 invrs <<- NULL
-      
+}      
 ## 2. getter for the matrix x:
         get <- function()x
 ## 3 the setter for the inverse invrs
